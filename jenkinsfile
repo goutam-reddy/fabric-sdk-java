@@ -40,7 +40,6 @@ stages {
   stage('publish'){
   steps{
 sh '[nexusPublisher nexusInstanceId: 'admin', nexusRepositoryId: 'Release', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '/var/lib/jenkins/workspace/fabric-sdk-java/target/fabric-sdk-java-2.0.0-SNAPSHOT.jar']], mavenCoordinate: [artifactId: 'fabric-sdk-java', groupId: 'org.hyperledger.fabric-sdk-java', packaging: 'war', version: '2.0.0-SNAPSHOT']]]'
-
     }
 }
      }
