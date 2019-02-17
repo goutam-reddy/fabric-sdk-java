@@ -646,4 +646,11 @@
             </build>
         </profile>
     </profiles>
+         <distributionManagement>
+    <repository>
+      <id>admin</id>
+      <name>Release</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
 </project>
