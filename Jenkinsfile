@@ -13,7 +13,7 @@
 	}
 	 stage('Test'){
 	   steps {
-		sh 'mvn -Dmaven.test.skip=true'
+		sh 'mvn test'
 		}
 	}
         stage('Do you want to proceed..?') {
