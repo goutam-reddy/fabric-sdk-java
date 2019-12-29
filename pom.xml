@@ -218,6 +218,7 @@
 
 
     <build>
+     <!--
         <resources>
             <resource>
                 <filtering>false</filtering>
@@ -230,6 +231,7 @@
                 </excludes>
             </resource>
         </resources>
+     
         <extensions>
             <extension>
                 <groupId>kr.motd.maven</groupId>
@@ -248,7 +250,8 @@
                         <include>**/*Test.java</include>
                     </includes>
                     <!--<useSystemClassLoader>true</useSystemClassLoader>-->
-                </configuration>
+             <!--
+             </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -260,9 +263,11 @@
                         <include>**/${org.hyperledger.fabric.sdktest.ITSuite}</include>
                     </includes>
                     <skipITs>${skipITs}</skipITs>
+                
                     <!--<argLine>-->
                     <!-- -Xbootclasspath/p:${settings.localRepository}/org/mortbay/jetty/alpn/alpn-boot/${alpn-boot-version}/alpn-boot-${alpn-boot-version}.jar-->
                     <!--</argLine>-->
+                <!--
                 </configuration>
                 <executions>
                     <execution>
@@ -280,6 +285,7 @@
                 <artifactId>protobuf-maven-plugin</artifactId>
                 <version>0.5.0</version>
                 <configuration>
+              -->
                     <!--
                       The version of protoc must match protobuf-java. If you don't depend on
                       protobuf-java directly, you will be transitively depending on the
