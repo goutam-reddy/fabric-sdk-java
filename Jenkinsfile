@@ -17,6 +17,11 @@ stages {
       sh 'mvn compile'
           }
      }
+stage('test'){
+    steps{
+      sh 'mvn test -DskipTests=true'
+         }
+     }
 
 stage('verify'){
   steps{
